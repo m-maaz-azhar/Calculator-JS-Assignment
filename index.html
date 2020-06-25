@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <h1>SIMPLE CALCULATOR</h1>
+      <br />
+      <div class="container">
+        <table>
+          <tr>
+            <td colspan="4">
+              <div class="screen">
+                <input type="text" id="output" />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('7')">7</button></td>
+            <td><button onclick="insert('8')">8</button></td>
+            <td><button onclick="insert('9')">9</button></td>
+            <td><button onclick="insert('/')" id="sign">&#247;</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('4')">4</button></td>
+            <td><button onclick="insert('5')">5</button></td>
+            <td><button onclick="insert('6')">6</button></td>
+            <td><button onclick="insert('*')" id="sign">&#215;</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('1')">1</button></td>
+            <td><button onclick="insert('2')">2</button></td>
+            <td><button onclick="insert('3')">3</button></td>
+            <td><button onclick="insert('-')" id="sign">&#8722;</button></td>
+          </tr>
+          <tr>
+            <td><button onclick="insert('0')">0</button></td>
+            <td><button onclick="insert('.')">.</button></td>
+            <td><button onclick="showResult()" id="sign">&#61;</button></td>
+            <td><button onclick="insert('+')" id="sign">&#43;</button></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button onclick="document.getElementById('output').value = ''">
+                Clear
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
