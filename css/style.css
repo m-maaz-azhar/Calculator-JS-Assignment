@@ -32,6 +32,7 @@ table button {
   margin: 5px;
   padding: 20px;
   cursor: pointer;
+  font-size: 17px;
 }
 table button#sign{
     background-color: #404040;
